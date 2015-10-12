@@ -4,17 +4,17 @@ var mongoose = require('mongoose'),
 module.exports = function(Circles, app) {
 
   return {
-    test: test,
-    visualize: visualize,
-    tree: tree,
-    create: create,
-    update: update,
-    mine: mine,
+    aclBlocker: aclBlocker,
     all: all,
-    show: show,
+    create: create,
     loadCircles: loadCircles,
+    mine: mine,
+    show: show,
+    test: test,
+    tree: tree,
     userAcl: userAcl,
-    aclBlocker: aclBlocker
+    update: update,
+    visualize: visualize
   };
 
   function test(req, res) {
