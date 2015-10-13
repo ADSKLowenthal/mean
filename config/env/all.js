@@ -53,5 +53,10 @@ module.exports = {
     cssFramework: 'bootstrap'
   },
   // The session cookie name
-  sessionName: 'connect.sid'
+  sessionName: 'connect.sid',
+
+  //Circles customization
+  circles: {
+    model: 'Permissions'
+  }
 };

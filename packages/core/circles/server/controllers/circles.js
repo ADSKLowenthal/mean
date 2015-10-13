@@ -1,5 +1,7 @@
 var mongoose = require('mongoose'),
-  Circle = mongoose.model('Circle');
+  config = require('meanio').loadConfig();
+
+var Circle = mongoose.model(config.circles.model || 'Circle');
 
 module.exports = function(Circles, app) {
 
